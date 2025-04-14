@@ -29,7 +29,11 @@ importers:
 
   packages/core: {}
 
-  packages/docs: {}
+  packages/docs:
+    dependencies:
+      '@pnpm-ws-demo/core':
+        specifier: workspace:*
+        version: link:../core
 
 packages:
 
