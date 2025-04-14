@@ -12,7 +12,8 @@
     "typecheck": "pnpm --filter \"./packages/**\" typecheck",
     "lint": "echo 'Linting not setup yet'",
     "test": "vitest",
-    "test:core": "pnpm --filter @pnpm-ws-demo/core test"
+    "test:core": "pnpm --filter @pnpm-ws-demo/core test",
+    "publish:core": "pnpm publish --filter @pnpm-ws-demo/core"
   },
   "keywords": [],
   "author": "",
