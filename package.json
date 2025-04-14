@@ -1,18 +1,18 @@
 {
-  "name": "pnpm-ws-demo",
+  "name": "@pnpm-ws-demo/monorepo",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "pnpm --filter \"./packages/**\" build",
-    "build:core": "pnpm --filter @your-scope/core build",
+    "build:core": "pnpm --filter @pnpm-ws-demo/core build",
     "dev": "pnpm --filter \"./packages/**\" dev --parallel",
-    "dev:core": "pnpm --filter @your-scope/core dev",
+    "dev:core": "pnpm --filter @pnpm-ws-demo/core dev",
     "typecheck": "pnpm --filter \"./packages/**\" typecheck",
     "lint": "echo 'Linting not setup yet'",
     "test": "vitest",
-    "test:core": "pnpm --filter core test"
+    "test:core": "pnpm --filter @pnpm-ws-demo/core test"
   },
   "keywords": [],
   "author": "",
